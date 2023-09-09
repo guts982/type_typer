@@ -20,16 +20,22 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Demo
 
+**Live at:** https://type-typer.vercel.app/
+
 ![1694251179983](image/README/1694251179983.png)
 
 typer page
 
 ![1694251270587](image/README/1694251270587.png)
 
-results 
+results
 
 ![1694251146819](image/README/1694251146819.png)
 
 3d typer under construction
 
 ![1694251297346](image/README/1694251297346.png)
+
+Lighthouse Score
+
+![1694253970060](image/README/1694253970060.png)
