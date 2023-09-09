@@ -28,6 +28,13 @@ function findKeyIndex(key: string) {
   );
 }
 
+// function useAnimationControlsArray(length:number) {
+//   const animationControlsArray = Array.from({ length }, () =>
+//     useAnimationControls()
+//   );
+//   return animationControlsArray;
+// }
+
 const Keyboard = () => {
   const [pressed, setPressed] = useState("");
   const [capsOn, setCapsOn] = useState(false);
@@ -41,9 +48,72 @@ const Keyboard = () => {
 
   const keysRef = useRef<Array<HTMLElement | SVGElement | null>>([]);
   //   const controls = useAnimationControls();
-  const animationControlsArray = Array.from({ length: keys.length }, () =>
-    useAnimationControls()
-  );
+  // const animationControlsArray:AnimationControls[] = new Array(keys.length).fill(useAnimationControls) //in dev
+  const animationControlsArray:AnimationControls[] = new Array(keys.length) //in prod
+  animationControlsArray[0] = useAnimationControls()
+  animationControlsArray[1] = useAnimationControls()
+  animationControlsArray[2] = useAnimationControls()
+  animationControlsArray[3] = useAnimationControls()
+  animationControlsArray[4] = useAnimationControls()
+  animationControlsArray[5] = useAnimationControls()
+  animationControlsArray[6] = useAnimationControls()
+  animationControlsArray[7] = useAnimationControls()
+  animationControlsArray[8] = useAnimationControls()
+  animationControlsArray[9] = useAnimationControls()
+  animationControlsArray[10] = useAnimationControls()
+  animationControlsArray[11] = useAnimationControls()
+  animationControlsArray[12] = useAnimationControls()
+  animationControlsArray[13] = useAnimationControls()
+  animationControlsArray[14] = useAnimationControls()
+  animationControlsArray[15] = useAnimationControls()
+  animationControlsArray[16] = useAnimationControls()
+  animationControlsArray[17] = useAnimationControls()
+  animationControlsArray[18] = useAnimationControls()
+  animationControlsArray[19] = useAnimationControls()
+  animationControlsArray[20] = useAnimationControls()
+  animationControlsArray[21] = useAnimationControls()
+  animationControlsArray[22] = useAnimationControls()
+  animationControlsArray[23] = useAnimationControls()
+  animationControlsArray[24] = useAnimationControls()
+  animationControlsArray[25] = useAnimationControls()
+  animationControlsArray[26] = useAnimationControls()
+  animationControlsArray[27] = useAnimationControls()
+  animationControlsArray[28] = useAnimationControls()
+  animationControlsArray[29] = useAnimationControls()
+  animationControlsArray[30] = useAnimationControls()
+  animationControlsArray[31] = useAnimationControls()
+  animationControlsArray[32] = useAnimationControls()
+  animationControlsArray[33] = useAnimationControls()
+  animationControlsArray[34] = useAnimationControls()
+  animationControlsArray[35] = useAnimationControls()
+  animationControlsArray[36] = useAnimationControls()
+  animationControlsArray[37] = useAnimationControls()
+  animationControlsArray[38] = useAnimationControls()
+  animationControlsArray[39] = useAnimationControls()
+  animationControlsArray[40] = useAnimationControls()
+  animationControlsArray[41] = useAnimationControls()
+  animationControlsArray[42] = useAnimationControls()
+  animationControlsArray[43] = useAnimationControls()
+  animationControlsArray[44] = useAnimationControls()
+  animationControlsArray[45] = useAnimationControls()
+  animationControlsArray[46] = useAnimationControls()
+  animationControlsArray[47] = useAnimationControls()
+  animationControlsArray[48] = useAnimationControls()
+  animationControlsArray[49] = useAnimationControls()
+  animationControlsArray[50] = useAnimationControls()
+  animationControlsArray[51] = useAnimationControls()
+  animationControlsArray[52] = useAnimationControls()
+  animationControlsArray[53] = useAnimationControls()
+  animationControlsArray[54] = useAnimationControls()
+  animationControlsArray[55] = useAnimationControls()
+
+
+  // const animationControlsArray = Array.from({ length: keys.length }, () =>
+  //   useAnimationControls()
+  // );
+  // for(let i=0;i<keys.length;i++){
+  //   animationControlsArray[i] = useAnimationControls()
+  // }
 
   const handleButtonClick = (
     key: string,
