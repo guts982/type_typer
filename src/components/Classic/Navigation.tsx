@@ -15,7 +15,7 @@ const Navigation = () => {
     <div className=" bg-[#353E55] p-2 lg:px-10  flex w-full justify-between items-center">
     
 
-          <ScoreSection />
+          {/* <ScoreSection /> */}
 
         <Button  className=" border-[#BD574E] text-[#BD574E] font-semibold"
          variant="bordered"
